@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+  
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Press Start 2P", system-ui;
+  background: #abc72d;
+  
+ 
+}
+
+.header {
+
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+}
+.copy-right{
+  display: flex;
+  justify-content: flex-start; 
+
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: flex-end; 
+  width: 100%; 
+}
+
+.scoreboard p {
+  font-weight: bolder;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 10px 0;
+ 
+}
+
+.scoreboard div {
+  margin-left: 10px; 
+}
+
+.selections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+#result{
+  background-color: rgb(245, 221, 114);
+  width: 100%; 
+  height: 60px;
+  padding: 10px 0;
+  
+}
+
+.selections div {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+ .selections span {
+  display: block;
+   font-size: 30px;
+}
+.choices {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+
+.choices div {
+  margin: 0 10px;
+}
+
+.choice-btn {
+  background-color: #eef6fa;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 130px;
+  height: 100px;
+}
+
+.choice-btn:hover {
+  background-color: #a07545;
+}
+
+.choice-btn h2,.choice-btn h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.choice-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px #1a1712;
+}
+
+.choice-btn:active {
+  transform: translateY(2px);
+}
+
+
+@media screen and (max-width: 600px) {
+  .header {
+      padding: 10px;
+  }
+
+  .game-header {
+      flex-direction: column;
+  }
+  .copy-right{
+      text-align: center;
+      margin-bottom: 13px;
+  }
+
+  .scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+  }
+
+  .scoreboard div {
+      margin-left: 0; 
+      margin-right: 10px; 
+  }
+
+  .main {
+      padding: 10px;
+     
+  }
+
+  .selections div {
+      margin: 5px 0;
+  }
+
+  .choices {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+  }
+
+  .choices div {
+      margin: 5px 0;
+  }
+}

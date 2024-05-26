@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🎮 Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="copy-right"><p>&copy; 2024 <a href="https://github.com/AbdiIbrahimAdan">Abdi Ibrahim</a></p></div>
+    <div class="game-header">
+        <div class="scoreboard">
+            <div><p>Player</p> <span id="player-score">0</span></div>
+            <div><p>Computer</p> <span id="computer-score">0</span></div>
+        </div>
+    </header>
+    <Section class="main">
+        <div class="selections">
+          <div class="selections-comp">Computer <span id="computer-selection"></span></div>
+    <div id="result" class="result" ></div> 
+          <div class="selections-play">Player <span id="player-selection"></span></div>
+        </div>
+      
+        <div id="choices" class="choices">
+           <div><button id="rock" class="choice-btn">
+             <h2>✊</h2>
+             <h3>Rock</h3>
+            </button>
+           
+          </div>
+          <div><button id="paper" class="choice-btn">
+            <h2>✋</h2>  
+            <h3>Paper</h3>
+          </button>
+            
+          </div>
+          <div><button id="scissors" class="choice-btn">
+            <h2>✌️</h2>  
+            <h3>Scissors</h3>
+          </button>
+         </div>
+         </div>
+      </div>
+    </Section> 
+    <script  type="module" src="main.js"></script>
+</body>
+</html>
